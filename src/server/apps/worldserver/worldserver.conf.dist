@@ -675,10 +675,10 @@ ChatLog.Enable = 0
 #        Example:     536870912 (512 MB)
 
 Appender.Console=1,4,0,"1 9 3 6 5 8"
-Appender.Server=2,5,0,Server.log,w
-Appender.Playerbots=2,5,0,Playerbots.log,w
+Appender.Server=2,5,8,Server.log,w
+Appender.Playerbots=2,5,8,Playerbots.log,w
 # Appender.GM=2,5,15,gm_%s.log
-Appender.Errors=2,2,0,Errors.log,w
+Appender.Errors=2,2,8,Errors.log,w
 # Appender.DB=3,5,0
 # Appender.Dev=2,5,0,Dev.log,a
 
@@ -1331,7 +1331,7 @@ MapUpdateInterval = 10
 #        Description: Number of threads to update maps.
 #        Default:     1
 
-MapUpdate.Threads = 1
+MapUpdate.Threads = 4
 
 #
 #    MoveMaps.Enable
@@ -1434,7 +1434,7 @@ DontCacheRandomMovementPaths = 0
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-ActivateWeather = 1
+ActivateWeather = 0
 
 #
 #    ChangeWeatherInterval
@@ -1498,7 +1498,7 @@ Command.LookupMaxResults = 0
 #        Default:     1 - (Enabled)
 #                     0 - (Disabled)
 
-Die.Command.Mode = 1
+Die.Command.Mode = 0
 
 #
 ###################################################################################################
@@ -2115,7 +2115,7 @@ PlayerStart.String = ""
 #        Default:     0 - Disabled
 #                     1 - Enabled
 
-EnablePlayerSettings = 0
+EnablePlayerSettings = 1
 
 #
 #    MaxPlayerLevel
@@ -2824,7 +2824,7 @@ ItemDelete.KeepDays = 0
 #        Default:     0 - Off, Use DB values
 #                     1 - On, Enforce DBC Values (default)
 
-DBC.EnforceItemAttributes = 1
+DBC.EnforceItemAttributes = 0
 
 #
 #    Rate.Drop.Item.Poor
@@ -3468,7 +3468,7 @@ LFG.MailItemOnFullInventory = 0
 #                     LFG_OPTION_ENABLE_SEASONAL_BOSSES = 4, Enable seasonal bosses
 #        Default:     7
 
-DungeonFinder.OptionsMask = 7
+DungeonFinder.OptionsMask = 5
 
 #
 #    LFG.Location.All
